@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahya Ghifari</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Montserrat:wght@400;600&family=Syncopate&display=swap"
+        rel="stylesheet">
+
+    <!-- ICON -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-- TAILWIND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors:{
+                        c: '#fafaf0',
+                        b: '#2e2525'
+                    },
+                    fontFamily: {
+                        'mont': ['Montserrat', 'sans-serif'],
+                        'synco': ['Syncopate', 'sans-serif'],
+                        'alum': ['Alumni Sans Pinstripe', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    
+</head>
+<body class="overflow-x-hidden bg-c font-mont text-neutral-900">
+
+    <!-- NAV -->
+    <div id="nav">
+        <span class="material-symbols-outlined cursor-pointer fixed right-2 text-4xl menu-toggle z-50 text-b lg:hidden">
+            menu
+        </span>
+        <nav class="fixed z-50 h-screen right-0 flex flex-col justify-center w-1/2 text-4xl items-end text-c md:w-2/6 lg:h-fit lg:flex-row lg:w-5/12 lg:text-xl lg:justify-around lg:py-2 lg:text-neutral-900 ">
+            <span class="material-symbols-outlined cursor-pointer text-c absolute right-2 top-2 text-4xl menu-toggle hidden lg:hidden">
+                close
+            </span>
+            <a href="#me">Me</a>
+            <a href="#works">Works</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+    
+    <!-- ME -->
+    <section id="me" class="pt-28 flex flex-col justify-between h-screen overflow-hidden lg:pt-0 lg:flex-row">
+        <div id="me-text" class="text-center lg:w-1/2 lg:flex lg:flex-col lg:justify-center">
+            <h1 class="name uppercase text-5xl text-b text-center lg:text-7xl">nobody</h1>
+            <div id="me-line" class="h-[1px] w-9/12 bg-b mx-auto"></div>
+            <p class="lg:text-xl">The best or nothing - Mercedes Benz</p>
+        </div>
+        
+        <div id="me-image" class="relative flex justify-center items-center lg:pt-20">
+            <img src="assets/images/me.png" data-depth="0.1" class="w-1/2 z-10 md:w-5/12 lg:w-7/12" alt="">
+            <img src="assets/svg/circle.svg" data-depth="0.4" class="absolute place-self-center right-0 h-full translate-x-1/2 w-4/6 mx-auto md:w-1/2 lg:w-4/6" alt="">
+        </div>
+    </section>
+
+    <!-- WORKS -->
+    <section id="works" class="text-b border-t border-b">
+        <!-- HEADER -->
+        <div id="works-header" class="text-c lg:flex lg:items-center lg:items-stretch lg:h-[30vh]">
+            <h1 class="font-six text-6xl text-center bg-b py-8 px-5 lg:w-1/2 lg:text-7xl lg:p-0 lg:flex lg:items-center lg:justify-center">WORKS</h1>
+            <p class="italic text-center py-3 border-b border-b text-sm text-b lg:bg-c lg:h-max lg:text-lg xl:text-xl lg:py-8 lg:px-8 lg:border-0">"Only one way we can find out. Do it!"</p>
+        </div>
+        
+        <!-- DESIGN -->
+        <div id="design" class="mt-20 ">
+            <h3 class="font-semibold px-3 md:text-2xl lg:text-3xl">DESIGN</h3>
+            
+            <div id="designs" class="mt-8 w-9/12 md:w-7/12 lg:w-6/12 mx-auto h-fit grid grid-cols-3 grid-rows-2 ">
+                <img src="https://bl3302files.storage.live.com/y4mfUkat55g0J3WXSHgNxV8uxwXAgpOhnW6QwswuzpO0UMza_MtkEyv6ex770Q50oVFFEctsjrvy6_VHThrGrjgMHWBR6ryE85RyWOw4wjiNzOr_HJOOK0U35exRgt03BW1cVmx-6KdZBRe_qgOycNuPWNGT-AU2lxdCoUsE_Srn2EYOg9JJRuOWxJXKZSI341U?width=1024&height=576&cropmode=none" class="designs col-span-3" alt="design-1">
+                <img src="https://bl3302files.storage.live.com/y4mcx3GhnmXmeQBdrsVE69KlG07MvwmcM5iAwebON5tZExl1i4Kw9bLn_SyMqhFJGorSZvP8zG6z7NKLWxq-yqh1w8M9RnMexn7zBDvw6v2RawHl9EjAu7nobnRxvXfSRulNOuW6KfNLxECtcKGO-cpHNXHaDhfufdPtXskhXE8hIcz2rblqXgAa3Rqugpu8JEi?width=1024&height=1024&cropmode=none" class="col-start-1 row-span-3" alt="design-2">
+                <img src="https://bl3302files.storage.live.com/y4mcQFddqfabOiIZ_WP2ysj_LPsHN6LJGM6N-CdCyz_dfH2ONIvgqTNqozalt8uQa2aj1s3KTK3e1nZeso3cx2kqr-XzUEhJtHnsvtatkU88IqrujtuXKibHV80BOPkqa0III9r0dcDuG-fIuyGTBv-bamnES9OAMr11ualqa5a4-ZVlB2VfwAALXHgD65sE0YB?width=1024&height=1024&cropmode=none" class="" alt="design-3">
+                <img src="https://bl3302files.storage.live.com/y4mx4X5OORsXuEM_qUxd7kAtPxKwIuTF3IpES6kdk-FkG9QGCcRjGV8NQnUDa0OCu2jOi59hAUunEiKfBHyltg_u2rG_zJBK3GZz_eqchtz7JyUwLXEB7lLbqEFw1EgNjvMLrMoER0BF9kZUpMaVQ4AHEbUL16RraU0WOCakcxay46YHN742ZBu6lIJnhZ4Y7hO?width=819&height=1024&cropmode=none" class="" alt="design-4">
+            </div>
+        </div>
+
+        <!-- VECTOR -->
+        <div id="vector" class="mt-20 lg:mt-72">
+            <h3 class="font-semibold uppercase md:text-2xl lg:text-3xl px-3">Vector-Tracing</h3>
+                <div id="vectors" class="mt-8 mx-auto flex flex-col items-center lg:flex-row lg:justify-around">
+                    <img src="https://bl3302files.storage.live.com/y4m_vXzsQTMwkLpiUpJqT5Px853uk0810HqvceqIJmAGN5d7obTUM5xiybCg5iYi4qiW5F1kJYflwQP6yz8bV263wpRGWP2y89A2t7uaQKaZdvkAJJjdCFDHGlwCET0j21d8OIoMpoOfgs3p8MXF6b0hmZHNfuwsDZ24KpIsP8Ra-uEqSer1wJwew48z8vOmqOT?width=1024&height=1024&cropmode=none" class="w-1/2 md:w-5/12 lg:w-3/12" alt="vector-1">
+                    <img src="https://bl3302files.storage.live.com/y4mpXU9Co2QsEDZHcIpeEEYpGf9uvMa1NQTp1kjEfAudRZmaOQ1W494riEre1MyMCim7Nc0mencOhcK-5ib1QIRvfyxY2YwPZahcTxZUl644SAUshtW1nlvCl0_nIMfDZc3EGSJaco2cT1vYEcvXb6_05UQcszhnsZUfNYSFgMnqyhsVmkpMRRfkPiJId0LeOK4?width=1024&height=819&cropmode=none" class="w-1/2 md:w-5/12 lg:w-3/12" alt="vector-2">
+                    <img src="https://bl3302files.storage.live.com/y4mSrCDLuNMOpDlBdGyThT7zmeGh5bDRt-j7rRYK6NQGO_RGya-jOmfPEIUmcz9HEn6SHoC8gpKDOm0msjLzuLvqwa9GAdzjf4Sg6HvET4MERyzGBNNdl-YNGHkh3a1hKv5_NTOMOjZylcCmYV2xi1YZ6FQM_H32vGsv8Af6RhXx8SLkKUln6mjr1g0YWruGL2B?width=1024&height=1024&cropmode=none" class="w-1/2 md:w-5/12 lg:w-3/12" alt="vector-3">
+                </div>
+        </div>
+
+        <!-- Manipulation -->
+        <div id="manipulation" class="mt-20 lg:mt-72">
+            <h3 class="font-semibold px-3 uppercase md:text-2xl lg:text-3xl">Manipulation</h3>
+                <div id="manipulations" class="px-3 flex flex-col mx-auto mt-10 lg:grid lg:grid-cols-4 lg:grid-rows-2">
+                    <img src="https://bl3302files.storage.live.com/y4mNj9R9zVdHt-PDeD_3G3YxjsO2zsVQvxxPm3OfCGTlkdPeW02ljXw_RnJeDT2O26otYq_mIkEwQI3g2u556ZcjcoP8cEwe1-TeiS2bhzQbwku0PHNc_JcA53x1NUoS-xkmMsbfzMWSk3WtBXgtKPsEdT6O1Xuf7bwN2uSUm59DDyLL5KJCCpnVm2BxJVVzUdX?width=819&height=1024&cropmode=none" alt="manipulation-1">
+                    <img src="https://bl3302files.storage.live.com/y4mLhS37m-w_rD7m2SQunUWjmVxL6sYCALuyXhIS0JML5w896_cqZnPlNcUJv8-GUD4S8hHG-eNdRsPNI8giniohrDg19WUsHlTXxyNn8TAHfz5jC2a5xMuk8yQGkdtKbataUQFL79lPfxZwGvm0tPr9OLHY7IE8getBMIBcYOpgJXvXWbdWWWq6RN7codblhwY?width=819&height=1024&cropmode=none" class="self-end lg:row-start-2 lg:col-start-2" alt="manipulation-2">
+                    <img src="https://bl3302files.storage.live.com/y4mlESqd7ypihbDimdvibpKFdpGWzaukEfO50_Wk2NIXEGBzKpCFGsRkLlBBm59VS7zkMlcj7DhJ9IiS6khRfpUbcWlEuhlWUrbhNs6i4cS7vN200Int71DNCsXjiCaxiK_Q-E2hGg_TTcot47Ue9KXFSmn11M--0oQqlnfimtB9tvHtT-CfUQE64rSFmyQM9mR?width=819&height=1024&cropmode=none" class="col-start-3" alt="manipulation-3">
+                    <img src="https://bl3302files.storage.live.com/y4mArDvT0upchYoj9nhqNYFQ2INsxZTUxITK90eEp3iJrOCSfPubU4fR88Hz7EtVPuU1ftDOrnTU8XVGdZziJnbSYl0VgmAwLOfLMDmRg0xP8W16Yswvpj03-YExgAT43FMa4NscvAWxH0LVH4gwEg8HxlYq4xcG2Uu9AeHVISiYksZCvtNVR6LjuvCt5BvoX0k?width=819&height=1024&cropmode=none" class="self-end lg:row-start-2 lg:col-start-4" alt="manipulation-4">
+                </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="pt-52 px-3 grid grid-cols-2 grid-rows-1 h-screen lg:h-screen lg:flex lg:flex-col lg:relative">
+        <h1 class="text-5xl text-b text-right self-end p-2 md:text-6xl lg:mr-20 lg:border-b lg:border-b lg:w-full">ABOUT</h1>
+        <img src="assets/images/about.png" class="bg-b col-start-2 border border-b lg:w-3/12 lg:absolute lg:left-20" alt="about">
+        <p class="border border-b p-1 md:text-xl lg:text-right lg:w-1/2 lg:right-20 lg:absolute lg:my-auto lg:bottom-[25vh] xl:w-4/12 lg:border-none">Hi, i'm Ahya Ghifari, 19 years old. Don't have many things to tell you. I'm just a man do some work to make my
+        imagination become reality. Thank you so much you come to this page. <br> See ya!</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="mt-44 p-3 border-t border-b pt-12 h-screen flex flex-col justify-center lg:px-10">
+        <p class="font-semibold text-4xl lg:text-6xl text-b">You can connect <br> with me on...</p>
+        <div id="contacts" class="text-2xl lg:text-4xl h-1/2 flex flex-col justify-center">
+            <a href="http://instagram.com/nemody22" target="_blank">Instagram</a><br>
+            <a href="http://github.com/ahyaghifari" target="_blank">Github</a><br>
+            <a href="http://t.me/nemody00" target="_blank">Telegram</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-b text-c py-2 text-center">
+        <p> &copy; ahyaghifari2022</p>
+    </footer>
+
+
+    <!-- SCRIPT -->
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- PARALLAX -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+<!-- TILT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
