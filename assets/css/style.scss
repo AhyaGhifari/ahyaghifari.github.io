@@ -103,7 +103,7 @@ nav{
 @media (min-width: 768px){
     #manipulations{
         img{
-            width: 40%;
+            width: 90%;
         }
     }
 }
@@ -114,14 +114,10 @@ nav{
         opacity: 100;
         transform: translateX(0);
         background-color: transparent;
+        height: 10vh;
         a{
             padding: 0;
 
-        }
-    }
-    #manipulations {
-        img {
-            width: 90%;
         }
     }
 }

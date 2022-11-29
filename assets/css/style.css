@@ -112,7 +112,7 @@ nav a:hover {
 
 @media (min-width: 768px) {
   #manipulations img {
-    width: 40%;
+    width: 90%;
   }
 }
 
@@ -125,12 +125,10 @@ nav a:hover {
     -webkit-transform: translateX(0);
             transform: translateX(0);
     background-color: transparent;
+    height: 10vh;
   }
   nav a {
     padding: 0;
-  }
-  #manipulations img {
-    width: 90%;
   }
 }
 
