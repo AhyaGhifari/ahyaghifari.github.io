@@ -7,6 +7,10 @@ $(document).ready(function () {
         return false;
      });
 
+    let y = new Date();
+    $('#thisyear').html(y.getFullYear());
+
+    $('#old').html(y.getFullYear() - 2003);
 
     $('.menu-toggle').click(function (e) {
         $('nav').toggleClass('nav-anim');
