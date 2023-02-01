@@ -1,0 +1,30 @@
+<div id="about" class="pt-20 grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-5 w-10/12 mx-auto">
+    <h1 class="font-anton text-5xl text-neutral-800 md:self-end sm:text-6xl md:text-7xl">About</h1>
+    <p class="text-center text-lg md:text-left sm:text-xl">Hi, My name is Ahya Ghifari, 19 years old i am a student web programmer and photoshop hobbies. I don't have many things to say. But thank you to come to this website. Some my works is result of my imagination.</p>
+    <div id="about-image" class="overflow-hidden md:row-start-1 md:col-start-2 md:row-span-2 md:h-[80vh] md:aspect-[3/4] flex justify-center w-full">
+        <img src="./assets/images/about.jpg" alt="about" class="aspect-video object-cover mx-auto md:aspect-[3/4]">
+    </div>
+</div>
+
+<script>
+    gsap.from("#about h1", {
+        text:{
+            value: ""
+        },
+        duration: 1
+    })
+    gsap.from("#about p", {
+        text: {
+            value: ""
+        },
+        duration: 4,
+        opacity: 0,
+        delay: 1
+    })
+    gsap.from("#about-image",{
+        width: 0,
+        opacity: 0,
+        duration: 1.5,
+        delay: 4
+    })
+</script>

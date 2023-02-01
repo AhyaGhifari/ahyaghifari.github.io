@@ -1,0 +1,31 @@
+<div id="me" class="h-screen flex flex-col justify-around p-4">
+    <h1 class="font-anton text-6xl w-1/2 uppercase z-10 text-neutral-800 sm:text-7xl lg:text-8xl md:w-full">Ahya Ghifari
+    </h1>
+    <img src="./assets/images/me.jpg"
+        class="aspect-[3/4] h-1/2 object-cover bg-white mx-auto md:aspect-[4/3] lg:aspect-video border p-2 border-neutral-800 md:h-fit md:w-8/12 lg:w-7/12 lg:h-1/2"
+        alt="">
+    <p class="font-kanit text-center text-lg text-right md:text-2xl w-1/2 self-end lg:text-4xl">A student, Web Programmer and Photoshop Hobbies.</p>
+</div>
+<script>
+    gsap.from("#me h1", {
+            text: {
+                value: ""
+            },
+            opacity: 0,
+            duration: 3,
+            // ease: "power4.out"
+        });
+        gsap.from("#me img", {
+            opacity: 0,
+            duration: 1,
+            delay: 5,
+        })
+        gsap.from("#me p", {
+            text:{
+                value: ""
+            },
+            opacity: 0,
+            duration: 3,
+            delay: 2,
+        })
+</script>
