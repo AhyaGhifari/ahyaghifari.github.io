@@ -53,29 +53,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-    <script>
-        $('#nav-toggle').click(function(){
-            $(this).toggleClass('active');
-            $('#nav-list').toggleClass('active');
-        });
-        $("main").load("me.html");
-
-        $('.nav').click(function(){
-            $('main').removeClass("fade-in");
-            var nav = $(this).data('nav');
-            $('#nav-list').removeClass('active');
-            $('#nav-toggle').toggleClass('active');
-            $('main').addClass('fade-out');
-            setTimeout(function(){
-                $('main').removeClass('fade-out');
-                $('main').load(nav+".html");
-                $('main').addClass("fade-in");
-            }, 1500);
-            // setTimeout(function(){
-            //     $('main').removeClass("fade-in");
-            // }, 1600)
-            });
-</script>
+    <script src="./assets/js/script.js"></script>
 
 </body>
 </html>

@@ -65,7 +65,7 @@ body {
   transform: scale(0);
 }
 #nav-toggle.active div:last-child {
-  transform: rotate(-45deg) translateY(-10.5px);
+  transform: rotate(-45deg) translateY(-9px);
 }
 
 #nav-list {
