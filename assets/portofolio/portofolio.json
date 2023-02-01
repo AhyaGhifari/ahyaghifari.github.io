@@ -1,0 +1,52 @@
+{
+    "portofolio": {
+        "web" : [
+            {
+                "name" : "SAFE",
+                "link" : "https://ahyaghifari.my.id/safe/",
+                "uses" : [
+                    "HTML",
+                    "SCSS",
+                    "TAILWIND",
+                    "JQuery",
+                    "Django"
+                ],
+                "image": "web-safe.png",
+                "type": "Landing Page"
+            },
+            {
+                "name" : "Deluxe",
+                "link" : "https://ahyaghifari.my.id/deluxe/",
+                "uses" : [
+                    "HTML",
+                    "SCSS",
+                    "TAILWIND",
+                    "JQuery",
+                    "Django"
+                ],
+                "image": "web-deluxe.png",
+                "type": "Static | <span class='undeploy'>Dynamic(Undeploy)</span>"
+            },
+            {
+                "name" : "Burkrezzz",
+                "link" : "https://burkrezzz.web.app/",
+                "uses" : [
+                    "React",
+                    "Vite"
+                ],
+                "image": "web-burkrezzz.png",
+                "type": "Dynamic"
+            },
+            {
+                "name" : "nothva",
+                "uses" : [
+                    "PHP",
+                    "TAILWIND"
+                ],
+                "image": "web-nothva.png",
+                "type": "Dynamic"
+            }
+
+        ]
+    }
+}
