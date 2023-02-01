@@ -9,7 +9,7 @@ $(document).ready(function () {
         text: {
             value: ""
         },
-        duration: 4,
+        duration: 5,
         opacity: 0,
         delay: 1
     })
@@ -17,6 +17,6 @@ $(document).ready(function () {
         width: 0,
         opacity: 0,
         duration: 1.5,
-        delay: 4
+        delay: 6
     })
 });

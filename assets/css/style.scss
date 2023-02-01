@@ -14,7 +14,6 @@ body{
     background-blend-mode: darken;
     background: rgb(255, 255, 255);
     overflow-x: hidden;
-    // background-image: url('../images/old-newspaper.jpg');
 }
 
 #dust{
@@ -64,7 +63,7 @@ body{
         transform: scale(0);
     }
     div:last-child{
-        transform: rotate(-45deg) translateY(-9px);
+        transform: rotate(-45deg) translateY(-10px);
     }
 }
 
@@ -85,7 +84,7 @@ body{
     z-index: 0;
     transition: 0.5s all ease-in-out;
     a{
-        font-size: 2rem;
+        font-size: 2.2rem;
         color: white;
         margin: 1vh 0;
         padding: 0 2px;
@@ -105,11 +104,15 @@ body{
 }
 main{
     min-height: 100vh;
-    overflow: hidden !important;
     div{
         transform-origin: left center;
     }
 }
+
+main, #me, #works, #about{
+    overflow-x: hidden;
+}
+
 main.fade-out{
     animation: mainfadeout 1.5s;
     animation-iteration-count: 1;
@@ -162,11 +165,16 @@ main.fade-in{
     }
 }
 
+.undeploy{
+    opacity: 50%;
+}
+
 @media (min-width: 768px) {
     #nav-toggle{
         display: none;
     }
     #nav-list{
+        background-color: white !important;
         transform: translateX(0);
         opacity: 100%;
         visibility: visible;
@@ -179,6 +187,14 @@ main.fade-in{
         a{
             font-size: 1.2rem;
             color: rgb(18, 18, 18);
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    #nav-list{
+        a{
+            font-size: 1.5rem;
         }
     }
 }

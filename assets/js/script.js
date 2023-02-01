@@ -16,5 +16,11 @@ $(document).ready(function () {
                 $('main').load(nav+".html");
                 $('main').addClass("fade-in");
             }, 1500);
-            });
+        });
+    $(document).on('click', function (e) {
+        if (!$(e.target).closest('nav').length) {
+            $('#nav-toggle').removeClass('active')
+            $('#nav-list').removeClass('active')
+        }
+    })
 });
