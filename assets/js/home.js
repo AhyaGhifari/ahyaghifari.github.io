@@ -11,7 +11,6 @@ tl.from("#home-profile", {
         value: ""
     },
     duration: 2.5,
-    // opacity: 0
 })
 tl.from('.home-leaf-2', {
     scale: 1.5,

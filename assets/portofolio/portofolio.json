@@ -47,7 +47,7 @@
             {
                 "name" : "nothva",
                 "slug" : "nothva",
-                "link" : "https://nothva.infinityfreeapp.com/",
+                "link" : "http://nothva.infinityfreeapp.com/",
                 "uses" : [
                     "PHP",
                     "TAILWIND"
@@ -68,7 +68,6 @@
                 "notes": "Shadow Dropship is project simple website about dropship from cloth seller Shadow. This Shadow Dropship create with PHP and little bit OOP concept.",
                 "type": "Dynamic"
             }
-
         ]
     }
 }

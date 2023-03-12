@@ -6,12 +6,12 @@ $(document).ready(function () {
         $('#main-transition').addClass('fade-in');
         var nav = $(this).data('nav');
         $('title').html(nav[0].toUpperCase() + nav.slice(1) + ' | Ahya Ghifari');
-        $('#main-transition').html(nav);
+        $('#main-transition').html(nav + ".");
         $('.nav').removeClass('active');
         $(this).addClass('active');
         setTimeout(function(){
-            $('#main-transition').removeClass('fade-in');
             $('main').load(nav + ".html");
+            $('#main-transition').removeClass('fade-in');
             $('#main-transition').addClass('fade-out');
         }, 1000);
         setTimeout(function () {

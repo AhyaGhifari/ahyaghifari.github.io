@@ -71,3 +71,87 @@ body{
         }
     }
 }
+
+// ANIMATIONS
+.home-leaf-1{
+    animation: homeleaf1 10s linear infinite alternate-reverse;
+    transform: rotate(-120deg);
+}
+.home-leaf-2{
+    animation: homeleaf2 10s linear infinite;
+    transform: rotate(40deg);
+}
+
+@keyframes homeleaf2 {
+    0%{
+        transform: translateY(0px) rotate(40deg);
+    }
+    20%{
+        transform: translateY(20px) rotate(40deg);
+    }
+    40%{
+        transform: translateX(-20px) rotate(40deg);
+    }
+    60%{
+        transform: translateY(-20px) rotate(40deg);
+    }
+    80%{
+        transform: translateY(0) translateX(20px) rotate(40deg);
+    }
+    100%{
+        transform: translateY(1) translateX(0) rotate(40deg);
+    }
+}
+@keyframes homeleaf1 {
+    0%{
+        transform: translateY(0px) rotate(-120deg);
+    }
+    20%{
+        transform: translateY(20px) rotate(-120deg);
+    }
+    40%{
+        transform: translateX(-20px) rotate(-120deg);
+    }
+    60%{
+        transform: translateY(-20px) rotate(-120deg);
+    }
+    80%{
+        transform: translateY(0) translateX(20px) rotate(-120deg);
+    }
+    100%{
+        transform: translateY(1) translateX(0) rotate(-120deg);
+    }
+}
+
+.projects-leaf-2{
+    transform-origin: right;
+    transform: rotate(15deg);
+    animation: leaf2 5s linear infinite;
+}
+
+@keyframes leaf2 {
+    0%{
+        transform: rotate(15deg);
+    }
+    50%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(14deg);
+    }
+}
+
+.about-clouds{
+    animation: aboutclouds 2s linear infinite;
+}
+
+@keyframes aboutclouds {
+    from{
+        transform: translateX(0);
+        opacity: 100%;
+    }
+    to{
+        transform: translateX(-25px);
+        opacity: 0;
+    }
+}
