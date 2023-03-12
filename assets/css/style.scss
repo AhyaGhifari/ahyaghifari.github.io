@@ -3,6 +3,11 @@ $olive: #464E2E;
 $brown: #362706;
 $p4 : 1rem;
 
+body{
+    overflow-x: hidden !important;
+    background-color: #E9E5D6;
+}
+
 .nav{
     display: flex;
     justify-content: center;
@@ -36,6 +41,11 @@ $p4 : 1rem;
 #main-transition.done{
     transform: translateX(100%);
     transition: none;
+}
+
+#home{
+    height: 100vh;
+    overflow: hidden !important;
 }
 
 #project{
