@@ -1,26 +1,24 @@
 $(document).ready(function () {
-    $('#nav-toggle').click(function(){
-            $(this).toggleClass('active');
-            $('#nav-list').toggleClass('active');
-        });
-        $("main").load("me.html");
+    $('title').html('Home | Ahya Ghifari');
+    $("main").load("home.html");
 
-        $('.nav').click(function(){
-            $('main').removeClass("fade-in");
-            var nav = $(this).data('nav');
-            $('#nav-list').removeClass('active');
-            $('#nav-toggle').toggleClass('active');
-            $('main').addClass('fade-out');
-            setTimeout(function(){
-                $('main').removeClass('fade-out');
-                $('main').load(nav+".html");
-                $('main').addClass("fade-in");
-            }, 1500);
-        });
-    $(document).on('click', function (e) {
-        if (!$(e.target).closest('nav').length) {
-            $('#nav-toggle').removeClass('active')
-            $('#nav-list').removeClass('active')
-        }
-    })
+    $('.nav').click(function () {
+        $('#main-transition').addClass('fade-in');
+        var nav = $(this).data('nav');
+        $('#main-transition').html(nav);
+        $('.nav').removeClass('active');
+        $(this).addClass('active');
+        setTimeout(function(){
+            $('#main-transition').removeClass('fade-in');
+            $('main').load(nav + ".html");
+            $('#main-transition').addClass('fade-out');
+        }, 1000);
+        setTimeout(function () {
+            $('#main-transition').removeClass('fade-out');
+            $('#main-transition').addClass('done');
+        }, 2000);
+        setTimeout(function () {
+            $('#main-transition').removeClass('done');
+        }, 2500)
+    });
 });

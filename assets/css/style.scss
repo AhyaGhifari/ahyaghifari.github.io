@@ -1,200 +1,59 @@
-::-webkit-scrollbar {
-    background-color: rgb(204, 204, 204);
-    width: 10px;
-}
+$grey: #E9E5D6;
+$olive: #464E2E;
+$brown: #362706;
+$p4 : 1rem;
 
-::-webkit-scrollbar-thumb {
-    background-color: rgb(18, 18, 18);
-}
-
-body{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-blend-mode: darken;
-    background: rgb(255, 255, 255);
-    overflow-x: hidden;
-}
-
-#dust{
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../images/dust.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-blend-mode: screen;
-    opacity: 15%;
-    background-color: rgba(0, 0, 0, 0);
-    z-index: 100;
-    pointer-events: none;
-    user-select:none;
-}
-
-#nav-toggle{
-    // background-color: white;
-    position: fixed;
-    right: 0;
-    margin-top: 1vh;
-    margin-right: 2vw;
-    cursor: pointer;
-    // margin-left: ;
-    z-index: 10;
-    div{
-        margin: 0.8vh 0;
-        height: 2px;
-        width: 25px;
-        background-color: rgb(18, 18, 18);
-        transition: 0.5s all ease-in-out;
-    }
-}
-
-#nav-toggle.active{
-    z-index: 11;
-    div:first-child{
-        transform: rotate(45deg) translateY(10px);
-    }
-    div{
-        background-color: white;
-    }
-    div:nth-child(2){
-        opacity: 0;
-        transform: scale(0);
-    }
-    div:last-child{
-        transform: rotate(-45deg) translateY(-10px);
-    }
-}
-
-#nav-list{
-    position: fixed;
-    right: 0;
+.nav{
     display: flex;
-    flex-direction: column;
-    height: 100vh;
-    background-color: rgb(18, 18, 18);
-    text-align: right;
-    padding: 1.5rem;
-    width: 45%;
     justify-content: center;
-    transform: translateX(100%);
-    opacity: 0;
-    visibility: hidden;
-    z-index: 0;
-    transition: 0.5s all ease-in-out;
-    a{
-        font-size: 2.2rem;
-        color: white;
-        margin: 1vh 0;
-        padding: 0 2px;
-        cursor: pointer;
-    }
-    a:hover{
-        color: rgb(18, 18, 18);
-        background-color: white;
+    background-color: $grey;
+    padding: $p4;
+    .nav-icons{
+        fill: $olive;
+        width: 20px;
     }
 }
 
-#nav-list.active{
+.nav.active{
+    background-color: $olive;
+    .nav-icons{
+        fill: $grey;
+    }
+}
+
+#main-transition{
+    transform: translateX(100%);
+    border: 1px solid #362706;
+    transition: 1s all ease-in-out;
+    text-transform: capitalize;
+}
+#main-transition.fade-in{
+    transform: translateX(0);
+}
+#main-transition.fade-out{
+    transform: translateX(-100%);
+}
+#main-transition.done{
+    transform: translateX(100%);
+    transition: none;
+}
+
+#project{
+    transform: translateX(100%);
+    transition: 0.8s all ease-in-out;
+    border-left: 1px solid $brown;
+    opacity: 0;
+}
+
+#project.active{
     transform: translateX(0);
     opacity: 100%;
-    visibility: visible;
-    z-index: 10;
-}
-main{
-    min-height: 100vh;
-    div{
-        transform-origin: left center;
-    }
 }
 
-main, #me, #works, #about{
-    overflow-x: hidden;
-}
-
-main.fade-out{
-    animation: mainfadeout 1.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-main.fade-in{
-    animation: mainfadein 1.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;    
-}
-
-@keyframes mainfadeout {
-    from{
-        opacity: 100%;
-        transform: translateX(0);
-    }
-    to{
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-}
-@keyframes mainfadein {
-    from{
-        opacity: 0;
-        transform: translateX(100%);
-    }
-    to{
-        opacity: 100%;
-        transform: translateX(0);
-    }
-}
-
-.works-preview{
-    .visit-site{
-        visibility: hidden;
-        opacity: 0;
-        transition: 0.4s all ease-in-out;
-    }
-}
-
-.works-preview:hover{
-    img{
-        transition: 0.4s all ease-in-out;
-        filter: brightness(80%);
-    }
-    .visit-site{
-        visibility: visible;
-        opacity: 100%;
-        // display: inline;
-    }
-}
-
-.undeploy{
-    opacity: 50%;
-}
-
-@media (min-width: 768px) {
-    #nav-toggle{
-        display: none;
-    }
-    #nav-list{
-        background-color: white !important;
-        transform: translateX(0);
-        opacity: 100%;
-        visibility: visible;
-        z-index: 10;
-        height: fit-content;
-        flex-direction: row;
-        padding: 0;
-        justify-content: space-around;
-        background-color: transparent;
-        a{
-            font-size: 1.2rem;
-            color: rgb(18, 18, 18);
-        }
-    }
-}
-
-@media (min-width: 1024px) {
-    #nav-list{
-        a{
-            font-size: 1.5rem;
+@media (min-width: 768px){
+    .nav{
+        .nav-icons{
+            width: 25px;
         }
     }
 }

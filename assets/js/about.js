@@ -1,22 +1,35 @@
 $(document).ready(function () {
-    gsap.from("#about h1", {
+    var tl = gsap.timeline();
+    tl.from("#about h1", {
         text:{
             value: ""
         },
         duration: 1
     })
-    gsap.from("#about p", {
+    tl.from("#about p", {
         text: {
             value: ""
         },
         duration: 5,
-        opacity: 0,
-        delay: 1
     })
-    gsap.from("#about-image",{
-        width: 0,
+    tl.from("#about-image", {
+        y: 10,
         opacity: 0,
-        duration: 1.5,
-        delay: 6
+        duration: 0.8
+    })
+    tl.from("#about-cloud-1", {
+        x: 10,
+        opacity: 0,
+        duration: 0.8
+    })
+    tl.from("#about-cloud-2", {
+        x: 10,
+        opacity: 0,
+        duration: 0.5
+    })
+    tl.from("#about-cloud-3", {
+        x: 10,
+        opacity: 0,
+        duration: 0.7
     })
 });
