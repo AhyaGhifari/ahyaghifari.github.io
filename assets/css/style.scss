@@ -3,6 +3,10 @@ $olive: #464E2E;
 $brown: #362706;
 $p4 : 1rem;
 
+title{
+    text-transform: capitalize;
+}
+
 body{
     overflow-x: hidden !important;
     background-color: #E9E5D6;
