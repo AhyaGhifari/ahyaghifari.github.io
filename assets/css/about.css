@@ -1,0 +1,7 @@
+@import url('style.css');
+
+body{
+    background: rgb(26, 26, 26);
+        background: linear-gradient(90deg, rgba(26, 26, 26, 1) 0%, rgb(59, 59, 59) 100%);
+}
+

@@ -1,0 +1,28 @@
+@import url('style.css');
+
+body{
+    background: rgb(26, 26, 26);
+        background: linear-gradient(90deg, rgba(26, 26, 26, 1) 0%, rgb(59, 59, 59) 100%);
+}
+
+.contacts img{
+    transition: 0.5s all ease-in-out;
+    border-radius: 50%;
+    box-shadow: -3px 3px 2px #1a1a1a;
+}
+
+.contacts:hover > img{
+    scale: 1.1;
+    box-shadow: -6px 6px 4px #1a1a1ad0;
+    animation: contacthoveranim 5s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes contacthoveranim {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

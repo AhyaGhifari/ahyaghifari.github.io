@@ -1,0 +1,42 @@
+[
+    {
+        "name" : "SANS",
+        "link" : "https://ahyaghifari.my.id/sans",
+        "uses" : "HTML, CSS, JQuery, OwlCarousel",
+        "image": "sans.png",
+        "note": "SAFE is website project about a cafe and hangout place. SAFE a hangout place with modern and monochrome website. SAFE project have to type Landing page and Dynamic Website. This dynamic website is create with Django. ",
+        "type": "Landing Page"
+        },
+    {
+        "name" : "SAFE",
+        "link" : "https://safeee.netlify.app/",
+        "uses" : "Vue, TailwindCSS, etc",
+        "image": "safe.png",
+        "note": "SAFE is website project about a cafe and hangout place. SAFE a hangout place with modern and monochrome website. SAFE project have to type Landing page and Dynamic Website. This dynamic website is create with Django. ",
+        "type": "Landing Page"
+        },
+        {
+            "name" : "Deluxe",
+            "link" : "https://my-deluxe.netlify.app/",
+            "uses" : "Vue, TailwindCSS, etc",
+                "image": "deluxe.png",
+                "note" : "Deluxe is an e-commerce website about pastry restaurant Deluxe. This project have to type Static and Dynamic Website (undeploy). Dynamic website create with Django, static version deploy on github on link below. Dynamic Deluxe have full feature except notification.",
+                "type": "Static | <span class='undeploy'>Dynamic(Undeploy)</span>"
+            },
+            {
+                "name" : "Burkrezzz",
+                "link" : "https://burkrezzz.web.app/",
+                "uses" : "React",
+                "image": "burkrezzz.png",
+                "note" : "Burkrezzz is a simple project with React wih Vite. Burkrezzz is about burger with fried chicken in it.",
+                "type": "Dynamic"
+            },
+            {
+                "name" : "Shadow Dropship",
+                "link" : "http://shadow-dropship.epizy.com",
+                "uses" : "Native PHP, TailwindCSS",
+                "image": "shadow-dropship.png",
+                "note": "Shadow Dropship is project simple website about dropship from cloth seller Shadow. This Shadow Dropship create with PHP and little bit OOP concept.",
+                "type": "Dynamic"
+            }
+]

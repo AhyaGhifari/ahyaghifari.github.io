@@ -1,0 +1,27 @@
+@import url('style.css');
+
+body{
+    background: rgb(59, 59, 59);
+    background: radial-gradient(circle, rgba(59, 59, 59, 1) 0%, rgba(26, 26, 26, 1) 70%);
+}
+
+
+#name-shadow{
+    text-shadow: 3px 3px 2px #1a1a1ab7;
+}
+
+
+#explore-portfolio{
+    font-family: 'voltaire';
+    
+}
+
+/* #home-svg{
+    transform-origin: bottom left;
+    transform: scale(0.1);
+} */
+@media (min-width: 640px) {
+    #name-shadow{
+        text-shadow: 3px 5px 3px #1a1a1ab7;
+    }
+}
