@@ -1,26 +1,38 @@
 $(document).ready(function () {
 
-    var tl = gsap.timeline();
+    let mm = gsap.matchMedia();   
 
-    tl.from('h1', {
-        x: -30,
-        opacity: 0,
-        duration: 1.5
-    })
-    tl.from('h2', {
-        width: 0,
-        duration: 1
-    })
+    function animation() {
+        gsap.from('h1', {
+            x: -30,
+            opacity: 0,
+            duration: 1.5
+        })
+        gsap.from('h2', {
+            width: 0,
+            opacity: 0,
+            duration: 1,
+            delay: 1.5
+        })
 
-    tl.from('#website', {
-        y: 20,
-        opacity: 0,
-        duration: 1
-    })
+        gsap.from('#website', {
+            y: 20,
+            opacity: 0,
+            duration: 1,
+            delay: 2.5
+        })
 
-    setTimeout(() => {
-        $('#website').removeClass('hidden')
-    }, 500);
+        setTimeout(() => {
+            $('#website').removeClass('hidden')
+        }, 500);
+    }
+
+    mm.add('(max-width: 767px)', () => {
+        animation()
+    })
+    mm.add('(min-width: 768px)', () => {
+        animation()
+    })
 
     let owl = $('.website-carousel').owlCarousel({
         items: 1,
@@ -80,6 +92,10 @@ $(document).ready(function () {
             $('#website-uses').html($('.owl-item.active.center .website-uses').val())
             $('#website-link').attr('href', $('.owl-item.active.center .website-link').val())
         }, 100);
+    })
+
+     $('.nav-btn').click(function () {
+        $('#nav-list').toggleClass('active')
     })
 
 });

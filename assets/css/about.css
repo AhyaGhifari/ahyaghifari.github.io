@@ -1,7 +1,17 @@
 @import url('style.css');
 
 body{
-    background: rgb(26, 26, 26);
-        background: linear-gradient(90deg, rgba(26, 26, 26, 1) 0%, rgb(59, 59, 59) 100%);
+    background: #1A120B;
+    background: linear-gradient(180deg, #1A120B 0%, #3C2A21 100%);
 }
 
+#about{
+    background-image: url('https://images.unsplash.com/photo-1466337105551-aa3ab7890939?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGNhcHB1Y2Npbm98ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60');
+    background-color: #1A120B;
+    background-color: linear-gradient(180deg, #1A120B 0%, #3C2A21 100%);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode:soft-light;
+}

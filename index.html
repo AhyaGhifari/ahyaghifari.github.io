@@ -3,27 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME | AHYA GHIFARI</title>
+    <title>Home | Ahya Ghifari</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    choco: '#1A120B',
+                    brown: '#3C2A21',
+                    sand: '#E5E5CB',
+                    cream : '#D5CEA3',
+                    redsand: '#B85C38'
+                },
+                fontFamily: {
+                    'urbanist' : ['Urbanist', 'sans-serif']
+                }
+            }
+        }
+        }
+  </script>
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
-<body class="w-screen h-screen flex flex-col justify-center items-center">
+<body class="w-screen h-screen flex flex-col justify-center items-center font-[urbanist]">
     
-    <nav class="fixed bottom-0 left-0 p-2 font-voltaire text flex justify-between w-full items-center lg:p-4">
-        <p class="text-silver-1 text-xs md:text-sm lg:text-lg">COPYRIGHT2023</p>
-        <div class="flex w-1/2 sm:w-5/12 lg:w-4/12 justify-around text-sm md:text-lg lg:text-xl">
-            <a href="portfolio.html"  class="text-silver-1">PORTFOLIO</a>
-            <a href="about.html"  class="text-silver-1">ABOUT</a>
-            <a href="contact.html"  class="text-silver-1">CONTACT</a>
+    <nav class="fixed bottom-0 right-0 p-2 font-voltaire text flex justify-between items-center z-10 md:top-0  lg:p-4">
+        <div id="nav-list" class="fixed w-full left-0 bottom-0 p-5 flex flex-col z-20 text-2xl text-cream sm:text-3xl md:top-0 md:flex-row md:w-5/12 md:h-fit md:right-0 md:left-auto md:text-lg md:justify-around md:p-2 xl:text-2xl xl:p-4">
+            <a href="/"  class="w-fit my-1 font-semibold text-sand">Home</a>
+            <a href="portfolio.html"  class="w-fit my-1">Portfolio</a>
+            <a href="about.html"  class="w-fit my-1">About</a>
+            <button class="nav-btn text-cream absolute right-2 bottom-2 md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                class="w-10 h-10">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
         </div>
+        <button class="nav-btn text-cream rotate-[90deg] md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                class="w-10 h-10">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+            </svg>
+        </button>
     </nav>
 
-    <div class="relative flex flex-col items-center justify-center mt-16">
-        <h1 id="name" class="text-silver-1 font-highwind text-[90px] sm:text-8xl md:text-9xl lg:text-[180px] xl:text-[190px]">AHYA GHIFARI</h1>
-        <h1 id="name-shadow" class="font-highwind text-[90px] sm:text-8xl md:text-9xl lg:text-[180px] xl:text-[190px] absolute -z-[10]">AHYA GHIFARI</h1>
-    </div>
-    <a href="portfolio.html" id="explore-portfolio" class="font-voltaire bg-silver-1 p-1 text-lg md:text-2xl lg:text-3xl xl:text-4xl text-[#333333]">EXPLORE PORTFOLIO</a>
-    <img src="assets/svg/home.svg" id="home-svg" class="absolute top-0 right-0 w-3/4 -z-[20]" alt="">
+    <h3 class="text-cream text-xl z-10 lg:text-2xl xl:text-3xl">Hi internet, i,m</h3>
+    <h1 class="z-10 text-5xl font-semibold text-cream text-shadow mt-2 sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl xl:mt-4">Ahya Ghifari</h1>
+    <a href="portfolio.html" id="explore-portfolio" class="bg-redsand px-3 py-1 text-cream z-10 mt-6 sm:text-lg md:text-xl lg:text-2xl xl:mt-10">Explore My Portfolio</a>
+
+    <img id="me" src="assets/images/me.png" class="h-screen object-cover absolute  bottom-0 left-0 -translate-x-[40%] overflow-visible" alt="">    
+
+    <footer class="fixed bottom-2 left-2">
+        <p class="text-sm text-cream">Copyright2023</p>
+    </footer>
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>

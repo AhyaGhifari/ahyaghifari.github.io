@@ -1,26 +1,34 @@
 [
     {
+        "name" : "AERI",
+        "link" : "https://ahyaghifari.my.id/sans",
+        "uses" : "HTML, CSS, JQuery, OwlCarousel, GSAP",
+        "image": "aeri.png",
+        "note": "AERI. Is a static website by me about car rental. The idea of this website is long ago. But i can do it now, cause i don't reall understand about car. But here it is, i make this website to, after SANS project cause i want to add more static website. I create this for 5 days.",
+        "type": "Landing Page"
+    },
+    {
         "name" : "SANS",
         "link" : "https://ahyaghifari.my.id/sans",
-        "uses" : "HTML, CSS, JQuery, OwlCarousel",
+        "uses" : "HTML, CSS, JQuery, OwlCarousel, GSAP",
         "image": "sans.png",
-        "note": "SAFE is website project about a cafe and hangout place. SAFE a hangout place with modern and monochrome website. SAFE project have to type Landing page and Dynamic Website. This dynamic website is create with Django. ",
+        "note": "The idea of make SANS static website is long ago and i still have previous concept/design. And now i do it. SANS project is actually for my training to understand ScrollTrigger plugin on GSAP. Why SANS, someone usually use this word.",
         "type": "Landing Page"
-        },
+    },
     {
         "name" : "SAFE",
         "link" : "https://safeee.netlify.app/",
-        "uses" : "Vue, TailwindCSS, etc",
+        "uses" : "Vue, Codeigniter4, TailwindCSS, etc",
         "image": "safe.png",
-        "note": "SAFE is website project about a cafe and hangout place. SAFE a hangout place with modern and monochrome website. SAFE project have to type Landing page and Dynamic Website. This dynamic website is create with Django. ",
-        "type": "Landing Page"
+        "note": "SAFE actually is my long ago website. Is about cafe with modern and minimalist mood. And serve Indonesians food. Previous concept is just for static website. But now it can make reservation and send contact to me, then send email for response. This project made for me to train using Vue and Codeigniter 4/.",
+        "type": ""
         },
         {
             "name" : "Deluxe",
             "link" : "https://my-deluxe.netlify.app/",
-            "uses" : "Vue, TailwindCSS, etc",
+            "uses" : "Vue, Codeigniter4, TailwindCSS, etc",
                 "image": "deluxe.png",
-                "note" : "Deluxe is an e-commerce website about pastry restaurant Deluxe. This project have to type Static and Dynamic Website (undeploy). Dynamic website create with Django, static version deploy on github on link below. Dynamic Deluxe have full feature except notification.",
+                "note" : "Deluxe is about pastry shop. It sell bread, ice cream, donut, and coffe. Deluxe is not my first project to train me using Vue. Is another project with name Warung Anang. I can call this of my first big project using vue after Warung Anang. You can make order, canceled, and features website like dark mode. The contact page is running well too. Actually i make deluxe before with Django framework. And i keep it then i update it now",
                 "type": "Static | <span class='undeploy'>Dynamic(Undeploy)</span>"
             },
             {

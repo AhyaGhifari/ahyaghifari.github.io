@@ -3,36 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO | AHYA GHIFARI</title>
+    <title>Portfolio | Ahya Ghifari</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        choco: '#1A120B',
+                        brown: '#3C2A21',
+                        sand: '#E5E5CB',
+                        cream: '#D5CEA3',
+                        redsand: '#B85C38'
+                    },
+                    fontFamily: {
+                        'urbanist': ['Urbanist', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/css/portfolio.css">
 </head>
-<body class="w-screen h-screen bg-[#1a1a1a] overflow-x-hidden ">
+<body class="font-urbanist overflow-x-hidden">
     
-    <nav class="fixed bottom-0 left-0 p-2 font-voltaire text flex justify-between w-full items-center lg:p-4">
-        <p class="text-silver-1 text-xs md:text-sm lg:text-lg">COPYRIGHT2023</p>
-        <div class="flex w-1/2 sm:w-5/12 lg:w-4/12 justify-around text-sm md:text-lg lg:text-xl">
-            <a href="index.html"  class="text-silver-1">HOME</a>
-            <a href="about.html"  class="text-silver-1">ABOUT</a>
-            <a href="contact.html"  class="text-silver-1">CONTACT</a>
+    <nav class="fixed bottom-0 right-0 p-2 font-voltaire text flex justify-between items-center z-10 md:top-0  lg:p-4">
+        <div id="nav-list"
+            class="fixed w-full left-0 bottom-0 p-5 flex flex-col z-20 text-2xl text-cream sm:text-3xl md:top-0 md:flex-row md:w-5/12 md:h-fit md:right-0 md:left-auto md:text-lg md:justify-around md:p-2 xl:text-2xl xl:p-4">
+            <a href="/" class="w-fit my-1">Home</a>
+            <a href="portfolio.html" class="w-fit my-1 font-semibold text-sand">Portfolio</a>
+            <a href="about.html" class="w-fit my-1">About</a>
+            <button class="nav-btn text-cream absolute right-2 bottom-2 md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-10 h-10">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
         </div>
+        <button class="nav-btn text-cream rotate-[90deg] md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                class="w-10 h-10">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+            </svg>
+        </button>
     </nav>
 
-    <nav class="p-4 flex justify-between items-end md:items-start md:p-7">
-        <h1 class="text-silver-1 font-highwind text-5xl lg:text-7xl xl:text-8xl">PORTFOLIO</h1>
-        <h2 class="font-highwind text-silver-1 border-b text-2xl w-5/12 text-right sm:text-3xl md:text-4xl">WEBSITE</h2>
-    </nav>
+    <header class="p-4 flex justify-between items-end md:items-start md:p-7 md:mt-10 lg:mt-16">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-cream">Portfolio</h1>
+        <h2 class="border-b border-redsand text-lg w-5/12 text-right sm:text-2xl md:text-3xl text-redsand md:text-sand md:border-sand">WEBSITE</h2>
+    </header>
 
-    <main class="mt-10 md:mt-16">
+    <main class="mt-10">
         <section id="website" class="md:relative hidden">
             <div class="website-carousel owl-carousel h-[40vh] md:h-[50vh] lg:h-[45vh] xl:h-[50vh] w-11/12 mx-auto sm:w-9/12 md:w-10/12 border-b border-gray-100 lg:w-9/12 xl:w-10/12">
                 
             </div>
-            <div class="portfolio-detail-scroller w-11/12 mx-auto sm:w-9/12 md:w-10/12 mt-3 md:absolute md:top-[20%] md:right-0 md:-translate-x-[70%] h-[20vh] md:w-[25%] md:z-[10] md:h-[40vh] overflow-y-scroll lg:-translate-x-[80%] lg:top-[10%] xl:w-[30%] lg:p-2 bg-[1a1a1a]">
+            <div class="portfolio-detail-scroller w-11/12 mx-auto sm:w-9/12 md:w-10/12 mt-3 md:absolute md:top-[20%] md:right-0 md:-translate-x-[70%] h-[25vh] md:w-[25%] md:z-[10] md:h-[40vh] overflow-y-scroll lg:-translate-x-[80%] lg:top-[10%] xl:w-[30%] lg:p-2 bg-[1a1a1a]">
                 <a href="" id="website-link" target="_blank" class="flex items-start">
-                    <h3 id="website-name" class=" text-5xl text-silver-1 font-highwind md:text-6xl lg:text-7xl">-</h3>
-                    <span class="text-silver-1 ml-2">    
+                    <h3 id="website-name" class="text-4xl md:text-5xl lg:text-6xl text-cream font-semibold">-</h3>
+                    <span class="text-cream ml-2">    
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 md:w-8 md:h-8">
                             <path fill-rule="evenodd"
                             d="M15.75 2.25H21a.75.75 0 01.75.75v5.25a.75.75 0 01-1.5 0V4.81L8.03 17.03a.75.75 0 01-1.06-1.06L19.19 3.75h-3.44a.75.75 0 010-1.5zm-10.5 4.5a1.5 1.5 0 00-1.5 1.5v10.5a1.5 1.5 0 001.5 1.5h10.5a1.5 1.5 0 001.5-1.5V10.5a.75.75 0 011.5 0v8.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V8.25a3 3 0 013-3h8.25a.75.75 0 010 1.5H5.25z"
@@ -41,11 +74,15 @@
                     </span>
                 </a>
            
-                <p class="text-silver-1 font-voltaire text-sm md:text-base xl:text-lg">uses : <span id="website-uses"></span></p>
-                <p id="website-note" class="text-xs mt-2 text-silver-1 font-voltaire md:text-sm xl:text-base">-</p>
+                <p class="text-sand text-sm md:text-base xl:text-lg bg-brown p-1 mt-2">uses : <span id="website-uses"></span></p>
+                <p id="website-note" class="text-xs mt-3 text-sand md:text-sm xl:text-base">-</p>
             </div>
         </section>
     </main>
+
+    <footer class="fixed bottom-2 left-2">
+        <p class="text-sm text-cream">Copyright2023</p>
+    </footer>
 
     <img src="" id="portfolio-bg" class="absolute top-0 right-0 h-screen w-screen object-cover -z-[50] in" alt="">
     <script src="assets/js/jquery.min.js"></script>
