@@ -1,12 +1,29 @@
 [
     {
+        "name" : "Danawa Studio <br> Staff",
+        "code" : "danawa-studio",
+        "link" : "",
+        "uses" : "Codeigniter 4, Tailwind CSS, JQuery",
+        "image": "preview.png",
+        "note": "This application make to renew application from Danawa Studio before for more effective and efficient. This application manage transaction, booking, and employees for company",
+        "type": "Dynamic",
+        "previews" : [
+            "login.png",
+            "dashboard.png",
+            "kasir.png",
+            "booking.png",
+            "pemotretan.png"
+        ]
+    },
+    {
         "name" : "AERI",
         "code" : "aeri",
         "link" : "https://ahyaghifari.my.id/aeri",
         "uses" : "HTML, CSS, JQuery, OwlCarousel, GSAP",
         "image": "aeri.png",
         "note": "AERI. Is a static website by me about car rental. The idea of this website is long ago. But i can do it now, cause i don't reall understand about car. But here it is, i make this website to, after SANS project cause i want to add more static website. I create this for 5 days.",
-        "type": "Landing Page"
+        "type": "Landing Page",
+        "previews" : []
     },
     {
         "name" : "SANS",
@@ -15,7 +32,9 @@
         "uses" : "HTML, CSS, JQuery, OwlCarousel, GSAP",
         "image": "sans.png",
         "note": "The idea of make SANS static website is long ago and i still have previous concept/design. And now i do it. SANS project is actually for my training to understand ScrollTrigger plugin on GSAP. Why SANS, someone usually use this word.",
-        "type": "Landing Page"
+        "type": "Landing Page",
+        "previews" : []
+
     },
     {
         "name" : "SAFE",
@@ -24,7 +43,8 @@
         "uses" : "Vue, Codeigniter4, TailwindCSS, etc",
         "image": "safe.png",
         "note": "SAFE actually is my long ago website. Is about cafe with modern and minimalist mood. And serve Indonesians food. Previous concept is just for static website. But now it can make reservation and send contact to me, then send email for response. This project made for me to train using Vue and Codeigniter 4/.",
-        "type": ""
+        "type": "",
+        "previews" : []
     },
     {
         "name" : "Deluxe",
@@ -33,7 +53,8 @@
         "uses" : "Vue, Codeigniter4, TailwindCSS, etc",
         "image": "deluxe.png",
         "note" : "Deluxe is about pastry shop. It sell bread, ice cream, donut, and coffe. Deluxe is not my first project to train me using Vue. Is another project with name Warung Anang. I can call this of my first big project using vue after Warung Anang. You can make order, canceled, and features website like dark mode. The contact page is running well too. Actually i make deluxe before with Django framework. And i keep it then i update it now",
-        "type": "Static | <span class='undeploy'>Dynamic(Undeploy)</span>"
+        "type": "Static | <span class='undeploy'>Dynamic(Undeploy)</span>",
+        "previews" : []
     },
     {
         "name" : "Burkrezzz",
@@ -42,15 +63,7 @@
         "uses" : "React",
         "image": "burkrezzz.png",
         "note" : "Burkrezzz is a simple project with React wih Vite. Burkrezzz is about burger with fried chicken in it.",
-        "type": "Dynamic"
-    },
-    {
-        "name" : "Shadow Dropship",
-        "code" : "shadow-dropship",
-        "link" : "http://shadow-dropship.epizy.com",
-        "uses" : "Native PHP, TailwindCSS",
-        "image": "shadow-dropship.png",
-        "note": "Shadow Dropship is project simple website about dropship from cloth seller Shadow. This Shadow Dropship create with PHP and little bit OOP concept.",
-        "type": "Dynamic"
+        "type": "Dynamic",
+        "previews" : []
     }
 ]

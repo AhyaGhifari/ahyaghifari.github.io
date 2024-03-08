@@ -77,6 +77,14 @@ $(document).ready(function () {
             $('#website-note').html(data[0].note)
             $('#website-uses').html(data[0].uses)
             $('#website-link').attr('href', data[0].link)
+            var previews = data[0].previews
+            if (previews.length > 0) {
+                previews.forEach((v) => {
+                    $('#website-previews').append(`
+                    <img src="assets/images/${data[0].code}/${v}" />
+                    `)
+                })    
+            }
             appendWebsites()
         }
     );
@@ -90,6 +98,15 @@ $(document).ready(function () {
             $('#website-note').html(find.note)
             $('#website-uses').html(find.uses)
             $('#website-link').attr('href', find.link)
+            $('#website-previews img').remove()
+            var previews = find.previews
+            if (previews.length > 0) {
+                previews.forEach((v) => {
+                    $('#website-previews').append(`
+                    <img src="assets/images/${find.code}/${v}" />
+                    `)
+                })    
+            }
         }, 100);
     })
 

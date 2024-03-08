@@ -1,0 +1,11 @@
+[
+    {
+        "name" : "Shadow Dropship",
+        "code" : "shadow-dropship",
+        "link" : "http://shadow-dropship.epizy.com",
+        "uses" : "Native PHP, TailwindCSS",
+        "image": "shadow-dropship.png",
+        "note": "Shadow Dropship is project simple website about dropship from cloth seller Shadow. This Shadow Dropship create with PHP and little bit OOP concept.",
+        "type": "Dynamic"
+    }
+]
