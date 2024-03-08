@@ -52,6 +52,14 @@ $(document).ready(function () {
         }
     })
 
+    $('#portfolio-preview-suggest').delay(10000).fadeOut(1000, function () {
+        $(this).remove()
+    })
+
+    owl.on('dragged.owl.carousel', function () {
+        $('#portfolio-preview-suggest').remove()
+    })
+
     let websites = []
 
     function appendWebsites() {

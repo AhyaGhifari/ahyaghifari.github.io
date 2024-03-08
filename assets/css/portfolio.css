@@ -27,6 +27,29 @@ box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     border-radius: 10px;
 }
 
+#portfolio-preview-suggest {
+    transform: translateX(0);
+    animation: portfoliosuggestanim 5s infinite;
+}
+
+@keyframes portfoliosuggestanim {
+    25% {
+        transform: translateX(50px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 @media (min-width: 768px) {
     .owl-item{
         scale: 0.5;
