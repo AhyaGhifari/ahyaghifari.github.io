@@ -40,7 +40,7 @@ $(document).ready(function () {
         center: true,
         responsive: {
             0: {
-                autoplay: true,
+                autoplay: false,
                 loop: true,
                 items: 1
             },
