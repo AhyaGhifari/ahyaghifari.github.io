@@ -24,6 +24,7 @@ $(document).ready(function () {
 
         setTimeout(() => {
             $('#website').removeClass('hidden')
+            $('.photoshop-carousel').removeClass('hidden')
         }, 500);
     }
 
@@ -48,6 +49,22 @@ $(document).ready(function () {
                 autoplay: false,
                 loop: true,
                 items: 3
+            }
+        }
+    })
+    let owlPs = $('.photoshop-carousel').owlCarousel({
+        items: 1,
+        margin: 15,
+        stagePadding: 10,
+        center: true,
+        autoplay: true,
+        loop: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            1208: {
+                items: 2
             }
         }
     })
