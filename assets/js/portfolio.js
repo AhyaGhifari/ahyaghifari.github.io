@@ -28,7 +28,7 @@ $(document).ready(function () {
     }
 
     mm.add('(max-width: 767px)', () => {
-        animation()
+          animation()
     })
     mm.add('(min-width: 768px)', () => {
         animation()
@@ -47,50 +47,49 @@ $(document).ready(function () {
             768: {
                 autoplay: false,
                 loop: true,
-                items: 2
+                items: 3
             }
         }
     })
 
-    let websites = [1, 2, 3, 4, 5]
+    let websites = []
 
     function appendWebsites() {
         $('.website-carousel div').remove()
         $.each(websites, function (i, w) { 
-            $('.website-carousel').append(`<div class="h-[40vh] md:h-[50vh] lg:h-[45vh] w-full flex justify-center items-center">
-                <input type="hidden" class="website-name" value="${w.name}" />
-                <input type="hidden" class="website-note" value="${w.note}" />
-                <input type="hidden" class="website-uses" value="${w.uses}" />
-                <input type="hidden" class="website-link" value="${w.link}" />
-                    <div class="w-11/12 sm:w-10/12 xl:w-8/12 mx-auto">
-                        <img src="assets/images/${w.image}" class="object-cover" alt="">
-                    </div>
-                </div>`)
+            $('.website-carousel').append(`<div class="h-[250px] w-[250px] md:h-[300px] md:w-[300px] aspect-[1/1] w-full flex justify-center items-center overflow-visible">
+                <input type="hidden" value="${w.code}" class="website-code">
+                    <img src="/assets/images/${w.code}/preview.png" class="object-cover h-[250px] w-[250px] md:h-[300px] md:w-[300px] aspect-[1/1] object-cover shadow js-tilt" alt="">
+            </div>`)
         });
         owl.owlCarousel('initialize')
+        $('.js-tilt').tilt({
+            maxTilt: 5,
+            glare: true,
+            // maxGlare: 2
+        })
     }
 
     $.getJSON("assets/data/portfolio.json", function (data) {
-        websites = data
-        $('#website-name').html(data[0].name)
-        $('#website-note').html(data[0].note)
-        $('#website-uses').html(data[0].uses)
-        $('#website-link').attr('href', data[0].link)
-        $('#portfolio-bg').attr('src', data[0].image)
-        appendWebsites()
-    }
+            websites = data
+            $('#website-name').html(data[0].name)
+            $('#website-type').html(data[0].type)
+            $('#website-note').html(data[0].note)
+            $('#website-uses').html(data[0].uses)
+            $('#website-link').attr('href', data[0].link)
+            appendWebsites()
+        }
     );
     
     
     owl.on('changed.owl.carousel', function (event) {
-        $('#portfolio-bg').removeClass('in')
         setTimeout(() => {
-            $('#portfolio-bg').addClass('in')
-            $('#portfolio-bg').attr('src', $('.owl-item.active.center img').attr('src'))        
-            $('#website-name').html($('.owl-item.active.center .website-name').val())
-            $('#website-note').html($('.owl-item.active.center .website-note').val())
-            $('#website-uses').html($('.owl-item.active.center .website-uses').val())
-            $('#website-link').attr('href', $('.owl-item.active.center .website-link').val())
+            var find = websites.find((v) => v.code == $('.owl-item.active.center .website-code').val())            
+            $('#website-name').html(find.name)
+            $('#website-type').html(find.type)
+            $('#website-note').html(find.note)
+            $('#website-uses').html(find.uses)
+            $('#website-link').attr('href', find.link)
         }, 100);
     })
 

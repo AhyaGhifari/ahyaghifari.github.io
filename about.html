@@ -12,14 +12,6 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: {
-                        choco: '#1A120B',
-                        brown: '#3C2A21',
-                        sand: '#E5E5CB',
-                        cream: '#D5CEA3',
-                        cream: '#D5CEA3',
-                        redsand: '#B85C38'
-                    },
                     fontFamily: {
                         'urbanist': ['Urbanist', 'sans-serif']
                     }
@@ -31,20 +23,20 @@
 </head>
 <body class="overflow-x-hidden font-urbanist">
     
-    <nav class="fixed bottom-0 right-0 p-2 text flex justify-between items-center z-10 md:top-0  lg:p-4">
+    <nav class="fixed bottom-0 right-0 p-2 font-voltaire text flex justify-between items-center z-10 md:top-0  lg:p-4">
         <div id="nav-list"
-            class="fixed w-full left-0 bottom-0 p-5 flex flex-col z-20 text-2xl text-cream sm:text-3xl md:top-0 md:flex-row md:w-5/12 md:h-fit md:right-0 md:left-auto md:text-lg md:justify-around md:p-2 xl:text-2xl xl:p-4">
+            class="fixed w-full left-0 bottom-0 p-5 flex flex-col z-20 text-2xl sm:text-3xl md:top-0 md:flex-row md:w-5/12 md:h-fit md:right-0 md:left-auto md:text-lg md:justify-around md:p-2 xl:text-2xl xl:p-4 text-zinc-500">
             <a href="/" class="w-fit my-1">Home</a>
             <a href="portfolio.html" class="w-fit my-1">Portfolio</a>
-            <a href="about.html" class="w-fit my-1 font-semibold text-sand">About</a>
-            <button class="nav-btn text-cream absolute right-2 bottom-2 md:hidden">
+            <a href="about.html" class="w-fit my-1 font-semibold text-zinc-800">About</a>
+            <button class="nav-btn text-zinc-600 absolute right-2 bottom-2 md:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-10 h-10">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
         </div>
-        <button class="nav-btn text-cream rotate-[90deg] md:hidden">
+        <button class="nav-btn text-black rotate-[90deg] md:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                 class="w-10 h-10">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
@@ -52,8 +44,8 @@
         </button>
     </nav>
 
-    <main class="relative p-5 flex flex-col items-center min-h-screen md:p-10 lg:w-10/12 lg:mx-auto overflow-hidden">
-        <section id="about" class="text-sand md:grid md:grid-cols-2 md:place-items-start mt-10 lg:mt-16 p-2 rounded md:p-4">
+    <main class="relative p-5 flex flex-col items-center min-h-screen md:p-10 lg:w-10/12 lg:mx-auto overflow-hidden text-white">
+        <section id="about" class="md:grid md:grid-cols-2 md:place-items-start mt-10 lg:mt-16 p-2 md:p-4">
             <h1 class="text-5xl text-cream text-center mt-5 font-semibold sm:text-6xl md:row-span-3 md:self-center md:justify-self-center lg:text-7xl text-cream">About Me</h1>
             <p id="name" class="mt-10 text-sm w-1/2 sm:text-base sm:text-center sm:mx-auto md:text-left md:text-lg">Hi
             my name is
@@ -61,18 +53,37 @@
             <p id="desciption" class="mt-10 text-sm w-1/2 sm:text-base sm:text-center sm:mx-auto md:text-left md:text-lg h-fit">Now i'm student at Banjarbaru, Kalimantan Selatan. <br> Now I'm a coder and photoshop hobbies also.</p>
             <p id="thanks" class="mt-10 text-sm w-1/2 sm:text-base sm:text-center sm:mx-auto md:text-left md:text-lg h-fit">Thank you for you to come to this page. <br>I appriciate that so much. I just want to give a look to my hobbies that idea just come into my mind. <br> <br>Thanks again. Bye.</p>
         </section>
-        <section id="contact" class="mt-8 min-h-[60vh]">
+        <section id="contact" class="mt-8 min-h-[60vh] text-zinc-800">
             <h1 class="text-4xl text-cream text-center mt-5 font-semibold sm:text-5xl md:row-span-3 md:self-center md:justify-self-center lg:text-6xl text-cream">Contact Me</h1>
-            <h4 class="text-center text-cream mt-2 md:text-lg">You contact me on </h4>
-            <div class="w-10/12 mx-auto mt-10 lg:mt-16 flex flex-col items-center md:flex-row md:justify-around md:w-full">
-                <img src="assets/svg/contact-email.svg" class="sm:w-[150px] md:w-[200px] md:mx-8 xl:mx-12 cursor-pointer" alt="">
-                <img src="assets/svg/contact_telegram.svg" class="mt-10 sm:w-[110px] md:w-[160px] md:mt-0 md:mx-8 xl:mx-12 cursor-pointer" alt="">
+            <h4 class="text-center mt-2 md:text-lg">You contact me on </h4>
+            <div class="w-11/12 mx-auto mt-10 flex flex-col items-center text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl">
+                <ul>
+                    <li>
+                        <a  class="flex items-center hover:opacity-75 group" target="_blank">
+                            <img class="w-[35px] h-[35px] md:w-[45px] md:h-[45px]" src="https://img.icons8.com/ios-filled/50/secured-letter--v1.png"
+                                alt="secured-letter--v1" />
+                            <p class="ml-3 bg-zinc-800 text-white p-1 px-2">mahyaghifari@gmail.com</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/ahyaghifari" class="flex items-center hover:opacity-75 group mt-3 md:mt-6" target="_blank">
+                            <img class="w-[35px] h-[35px] md:w-[45px] md:h-[45px]" src="https://img.icons8.com/ios-filled/50/telegram.png" alt="telegram" />
+                            <p class="ml-3 bg-zinc-800 text-white p-1 px-2">@ahyaghifari</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/62895413505336" class="flex items-center hover:opacity-75 group mt-3 md:mt-6" target="_blank">
+                            <img class="w-[35px] h-[35px] md:w-[45px] md:h-[45px]" src="https://img.icons8.com/ios-filled/50/whatsapp--v1.png" alt="whatsapp--v1" />
+                            <p class="ml-3 bg-zinc-800 text-white p-1 px-2">+62 895-4135-05336</p>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
    
     <footer class="fixed bottom-2 left-2">
-        <p class="text-sm text-cream">Copyright2023</p>
+        <p class="text-sm text-cream">Copyright2024</p>
     </footer>
 
     <script src="assets/js/jquery.min.js"></script>

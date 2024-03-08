@@ -29,7 +29,7 @@ $(document).ready(function () {
         duration: 1,
         delay: 1
     })
-    gsap.from('#contact div img', {
+    gsap.from('#contact div li', {
         y: 30,
         opacity: 0,
         duration: 1,

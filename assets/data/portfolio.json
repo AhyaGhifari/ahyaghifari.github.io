@@ -1,6 +1,7 @@
 [
     {
         "name" : "AERI",
+        "code" : "aeri",
         "link" : "https://ahyaghifari.my.id/aeri",
         "uses" : "HTML, CSS, JQuery, OwlCarousel, GSAP",
         "image": "aeri.png",
@@ -9,6 +10,7 @@
     },
     {
         "name" : "SANS",
+        "code" : "sans",
         "link" : "https://ahyaghifari.my.id/sans",
         "uses" : "HTML, CSS, JQuery, OwlCarousel, GSAP",
         "image": "sans.png",
@@ -17,34 +19,38 @@
     },
     {
         "name" : "SAFE",
+        "code" : "safe",
         "link" : "https://safeee.netlify.app/",
         "uses" : "Vue, Codeigniter4, TailwindCSS, etc",
         "image": "safe.png",
         "note": "SAFE actually is my long ago website. Is about cafe with modern and minimalist mood. And serve Indonesians food. Previous concept is just for static website. But now it can make reservation and send contact to me, then send email for response. This project made for me to train using Vue and Codeigniter 4/.",
         "type": ""
-        },
-        {
-            "name" : "Deluxe",
-            "link" : "https://my-deluxe.netlify.app/",
-            "uses" : "Vue, Codeigniter4, TailwindCSS, etc",
-                "image": "deluxe.png",
-                "note" : "Deluxe is about pastry shop. It sell bread, ice cream, donut, and coffe. Deluxe is not my first project to train me using Vue. Is another project with name Warung Anang. I can call this of my first big project using vue after Warung Anang. You can make order, canceled, and features website like dark mode. The contact page is running well too. Actually i make deluxe before with Django framework. And i keep it then i update it now",
-                "type": "Static | <span class='undeploy'>Dynamic(Undeploy)</span>"
-            },
-            {
-                "name" : "Burkrezzz",
-                "link" : "https://burkrezzz.web.app/",
-                "uses" : "React",
-                "image": "burkrezzz.png",
-                "note" : "Burkrezzz is a simple project with React wih Vite. Burkrezzz is about burger with fried chicken in it.",
-                "type": "Dynamic"
-            },
-            {
-                "name" : "Shadow Dropship",
-                "link" : "http://shadow-dropship.epizy.com",
-                "uses" : "Native PHP, TailwindCSS",
-                "image": "shadow-dropship.png",
-                "note": "Shadow Dropship is project simple website about dropship from cloth seller Shadow. This Shadow Dropship create with PHP and little bit OOP concept.",
-                "type": "Dynamic"
-            }
+    },
+    {
+        "name" : "Deluxe",
+        "code" : "deluxe",
+        "link" : "https://my-deluxe.netlify.app/",
+        "uses" : "Vue, Codeigniter4, TailwindCSS, etc",
+        "image": "deluxe.png",
+        "note" : "Deluxe is about pastry shop. It sell bread, ice cream, donut, and coffe. Deluxe is not my first project to train me using Vue. Is another project with name Warung Anang. I can call this of my first big project using vue after Warung Anang. You can make order, canceled, and features website like dark mode. The contact page is running well too. Actually i make deluxe before with Django framework. And i keep it then i update it now",
+        "type": "Static | <span class='undeploy'>Dynamic(Undeploy)</span>"
+    },
+    {
+        "name" : "Burkrezzz",
+        "code" : "burkrezzz",
+        "link" : "https://burkrezzz.web.app/",
+        "uses" : "React",
+        "image": "burkrezzz.png",
+        "note" : "Burkrezzz is a simple project with React wih Vite. Burkrezzz is about burger with fried chicken in it.",
+        "type": "Dynamic"
+    },
+    {
+        "name" : "Shadow Dropship",
+        "code" : "shadow-dropship",
+        "link" : "http://shadow-dropship.epizy.com",
+        "uses" : "Native PHP, TailwindCSS",
+        "image": "shadow-dropship.png",
+        "note": "Shadow Dropship is project simple website about dropship from cloth seller Shadow. This Shadow Dropship create with PHP and little bit OOP concept.",
+        "type": "Dynamic"
+    }
 ]

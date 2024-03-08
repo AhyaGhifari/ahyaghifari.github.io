@@ -1,44 +1,18 @@
 @import url('style.css');
 
-body{
-    /* overflow-x: hidden; */
-    background: #1A120B;
-    background: linear-gradient(90deg, #1A120B, #3C2A21);
-}
-
-#portfolio-bg{
-    -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.2) 90%, rgba(0, 0, 0, 0.3) 100%);
-    mask-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0.5) 100%);
-        filter: blur(2px);
-}
-
-#portfolio-bg.in{
-    animation: portfoliobganim 0.3s ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-
-@keyframes portfoliobganim {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;   
-    }
-}
-
 
 
 .owl-carousel{
-    overflow: visible;
+    overflow-y: visible;
 }
 
 .owl-item{
     transition: 0.3s  ease-in-out;
+    display: flex;
+    justify-content: center;
 }
-
-.owl-item.active.center img{
-    box-shadow: -3px 3px 4px rgba(0, 0, 0, 0.500);
+.owl-item.active img{
+box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 .portfolio-detail-scroller::-webkit-scrollbar{
@@ -55,32 +29,27 @@ body{
 
 @media (min-width: 768px) {
     .owl-item{
-        scale: 0.6;
+        scale: 0.5;
+        filter: grayscale(1) blur(1px);
         opacity: 0.5;
     }
     .owl-item.active.center{
+        filter: grayscale(0);
         opacity: 1;
-        scale: 1.5;
+        scale: 0.9;
         z-index: 2;
-        transform: translateX(-20%);
-    }
-    .owl-item.active.center img{
-        -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0.3) 90%, rgba(0, 0, 0, 0) 100%);
-        mask-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0.5) 100%);
     }
 }
 
 @media (min-width: 1280px) {
     .owl-item.active{
-        transform: translateX(-50%);
-        filter: grayscale(0.7);
+        scale: 0.7;
     }
     .owl-item.active.center{
         filter: grayscale(0);
         opacity: 1;
-        scale: 1.5;
+        scale: 1;
         z-index: 2;
-        transform: translateX(-30%);
     }
     #portfolio-bg {
         -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.6) 100%);
