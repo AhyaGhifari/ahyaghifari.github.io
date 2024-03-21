@@ -124,6 +124,16 @@ $(document).ready(function () {
             $('#website-uses').html(find.uses)
             $('#website-link').attr('href', find.link)
             $('#website-previews img').remove()
+            $('#website-type-project').html(find.project_type + " Project")
+            if (find.project_type == "Real") {
+                $('#website-type-project').addClass('bg-red-800')
+                $('#website-type-project').removeClass('bg-neutral-800')
+                $('#website-type-project').addClass('font-semibold')
+            } else {
+                $('#website-type-project').removeClass('bg-red-800')
+                $('#website-type-project').addClass('bg-neutral-800')            
+                $('#website-type-project').removeClass('font-semibold')
+            }
             var previews = find.previews
             if (previews.length > 0) {
                 previews.forEach((v) => {
