@@ -3,7 +3,7 @@
         "name": "Danawa Studio <br> Staff",
         "code": "danawa-studio",
         "link": "",
-        "uses": "Codeigniter 4, Tailwind CSS, JQuery",
+        "uses": "Codeigniter 4, Tailwind CSS, JQuery, ChartJS",
         "image": "preview.png",
         "note": "This application make to renew application from Danawa Studio before for more effective and efficient. This application manage transaction, booking, and employees for company",
         "type": "Dynamic",
